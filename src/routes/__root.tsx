@@ -67,8 +67,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Nexus AI — Workplace Productivity Assistant" },
       { name: "twitter:description", content: "Automate emails, meeting summaries, task plans, research, and chat with a single AI-powered workplace assistant." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f4f01eba-527b-4be0-8ae8-50cdbd8a1937" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f4f01eba-527b-4be0-8ae8-50cdbd8a1937" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/ALePpFBjBcV6Bva2vjET9poeQ3h1/social-images/social-1784193716917-ChatGPT_Image_Jul_16,_2026,_11_21_03_AM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/ALePpFBjBcV6Bva2vjET9poeQ3h1/social-images/social-1784193716917-ChatGPT_Image_Jul_16,_2026,_11_21_03_AM.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
