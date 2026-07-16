@@ -120,7 +120,16 @@ export function AIOutput({ value, onChange, onRegenerate, loading, filename = "o
             <span className="ml-1">{editing ? "Done" : "Edit"}</span>
           </Button>
           <Button variant="ghost" size="sm" onClick={copy}><Copy className="h-4 w-4" /><span className="ml-1">Copy</span></Button>
-          <Button variant="ghost" size="sm" onClick={download}><Download className="h-4 w-4" /><span className="ml-1">Download</span></Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm"><Download className="h-4 w-4" /><span className="ml-1">Export</span></Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onClick={downloadPdf}><FileType className="mr-2 h-4 w-4" />PDF (.pdf)</DropdownMenuItem>
+              <DropdownMenuItem onClick={downloadDocx}><FileText className="mr-2 h-4 w-4" />Word (.docx)</DropdownMenuItem>
+              <DropdownMenuItem onClick={downloadTxt}><FileText className="mr-2 h-4 w-4" />Plain text (.txt)</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           {onRegenerate && (
             <Button variant="ghost" size="sm" onClick={onRegenerate} disabled={loading}>
               <RefreshCw className={"h-4 w-4 " + (loading ? "animate-spin" : "")} />
